@@ -85,5 +85,7 @@ int main(void) {
 	freeMatrix(A);
 	freeMatrix(B);
 	freeMatrix(C);
+
+	return success ? EXIT_SUCCESS : EXIT_FAILURE;
 }
 
