@@ -1,2 +1,4 @@
-samples/build
-samples/build_debug
+small_samples/build
+small_samples/build_debug
+tools/build
+tools/build_debug
