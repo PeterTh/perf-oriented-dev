@@ -27,7 +27,10 @@ void create_files(const char* dirname, int num_files, int min_file_size, int max
     int j;
     for (j = 0; j < num_files; j++) {
         char filename[MAX_FILENAME_LENGTH];
-        snprintf(filename, MAX_FILENAME_LENGTH, "%s/file_%d", full_dirname, j);
+        int written = snprintf(filename, MAX_FILENAME_LENGTH, "%s/file_%d", full_dirname, j);
+        if(written < 0 || written >= MAX_FILENAME_LENGTH) {
+            fprintf(stderr, "Error building file path");
+        }
 
         int size = random_number(min_file_size, max_file_size);
         char *data = (char*)malloc(size);
@@ -55,6 +58,7 @@ int main(int argc, char** argv) {
     switch (argc) {
         case 6:
             seed = atoi(argv[5]);
+            // fall through
         case 5:
             num_directories = atoi(argv[1]);
             num_files = atoi(argv[2]);
