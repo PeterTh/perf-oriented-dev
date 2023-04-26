@@ -20,7 +20,7 @@ B) Measuring CPU counters
 For both programs, measure **all** events in the `[Hardware cache event]` category reported by `perf list`. Note that as discussed in the lecture, there is a limit on the number of hardware counters you can measure in a single run.
 
 For both programs:
- * Report the results in relative metrics, and compare these between the programs.
+ * Report the results in **relative** metrics, and compare these between the programs.
  * How significant is the perturbation in execution time caused by using perf to measure performance counters?
 
 Summarize, interpret and report your findings.
