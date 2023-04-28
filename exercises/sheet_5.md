@@ -1,9 +1,19 @@
 Exercise Sheet 5
 ================
 
-Use the spack GCC 12 installation on LCC2 for this exercise (`gcc version 12.2.0 (Spack GCC`).
+Use the spack GCC 12 installation on LCC2 for this exercise (`gcc version 12.2.0 (Spack GCC` / module `gcc/12.2.0-gcc-4.8.5-ykbdn5t`).
 
 For benchmarking, use both of our `larger_samples` testing programs, as well as `mmul`, `nbody`, `qap` and `delannoy`.
+Use the following configurations:
+```
+mmul: default (S=1000)
+nbody: M=400, others default
+qap: chr15c.dat
+delannoy: 13
+
+npb_bt: W
+ssca: 15
+```
 
 **NOTE**: You can query the available optimization options in GCC with  
 ```bash
