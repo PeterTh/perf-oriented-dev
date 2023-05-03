@@ -9,6 +9,8 @@ Think about which loop(s) to tile in order to achieve a meaningful performance b
 
 Test various tiling options on LCC2 (either manually or in an automated fashion) and report the results. Attempt to provide an explanation for the best parameter choices you found.
 
+Note: use a **2048²** matrix for this benchmark.
+
 
 B) Cache investigation
 ----------------------
