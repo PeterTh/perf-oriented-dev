@@ -1,7 +1,7 @@
 Exercise Sheet 5
 ================
 
-Use the spack GCC 12 installation on LCC2 for this exercise (`gcc version 12.2.0 (Spack GCC` / module `gcc/12.2.0-gcc-4.8.5-ykbdn5t`).
+Use the spack GCC 12 installation on LCC2 for this exercise (`gcc version 12.2.0 (Spack GCC)` / module `gcc/12.2.0-gcc-4.8.5-ykbdn5t`).
 
 For benchmarking, use both of our `larger_samples` testing programs, as well as `mmul`, `nbody`, `qap` and `delannoy`.
 Use the following configurations:
