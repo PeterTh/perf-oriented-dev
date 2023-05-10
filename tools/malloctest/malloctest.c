@@ -16,7 +16,7 @@ void* benchmark_thread(void *args) {
 		void **allocations = (void**)calloc(t_args->iterations, sizeof(void*));
 		for(int64_t i = 0; i < t_args->iterations; ++i) {
 			int64_t to_alloc = rand_r(&seed) % (t_args->upper - t_args->lower) + t_args->lower;
-			malloc(to_alloc);
+			allocations[i] = malloc(to_alloc);
 		}
 		for(int64_t i = 0; i < t_args->iterations; ++i) {
 			free(allocations[i]);
