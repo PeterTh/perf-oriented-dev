@@ -45,7 +45,8 @@ void delete_load_profile(load_profile *prof) {
 }
 
 static bool run = true;
-void handler() {
+void handler(int param) {
+	(void)(param);
 	run = false;
 }
 

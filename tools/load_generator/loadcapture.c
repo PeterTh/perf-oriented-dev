@@ -69,7 +69,8 @@ void capture_system_load(system_load_profile *external_profile) {
 #include <signal.h>
 
 static bool run = true;
-void handler() {
+void handler(int param) {
+	(void)(param);
 	run = false;
 }
 

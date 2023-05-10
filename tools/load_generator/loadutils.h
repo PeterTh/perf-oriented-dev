@@ -32,13 +32,13 @@ void set_affinity(int core) {
 	cpu_set_t mask;
 	CPU_ZERO(&mask);
 	CPU_SET(core, &mask);
-	if(!pthread_setaffinity_np(pthread_self(), sizeof(mask), &mask) == 0) {
+	if(pthread_setaffinity_np(pthread_self(), sizeof(mask), &mask) != 0) {
 		printf("Error setting thread affinity.\n");
 		exit(-1);
 	}
 }
 
-ull time_ms() {
+ull time_ms(void) {
 	struct timeval tv;
 	ull time;
 	gettimeofday(&tv, 0);
@@ -50,7 +50,7 @@ void skipline(FILE *file) {
 	static char tmp[1024*32];
 	char *skipped;
 	skipped = fgets(tmp, sizeof(tmp), file); // skip rest of line
-	skipped += 1; // suppress "unused" warning	
+	(void)(skipped); // suppress "unused" warning	
 }
 
 typedef struct core_load_profile_ {
@@ -99,7 +99,7 @@ double get_rel_load_on_core(unsigned core, core_load_profile* profile) {
 	return ret;
 }
 
-ull get_num_cpus() {
+ull get_num_cpus(void) {
 	ull ret = 1;
 #ifdef _SC_NPROCESSORS_ONLN
 	// Linux
