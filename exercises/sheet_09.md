@@ -32,13 +32,23 @@ deletion
 ... repeat x 10
 ```
 
-Make sure to follow all the best practices regarding benchmark design which we outlined in the lecture, and try to avoid any perturbation unrelated to the effect we want to measure.
+Make sure to **follow all the best practices regarding benchmark design which we outlined in the lecture**, and try to avoid any perturbation unrelated to the effect we want to measure.
+
+Some additional notes on implementation specifics:
+
+ * Pre-initialize all the data structures to N elements (you may reserve N+1 for the array)
+ * Perform linear traversal, wrapping around at the end (you can also, optionally and additionally, benchmark operations at random locations)
+ * You are free to select a programming language, but please choose one that compiles a priori to machine code
+ * For the write and read operations, ensure that the values are used in some way and not compile-time constants, and that the compiler can not throw away the operations
+ * Your number of benchmark iterations should not necessarily be equal to the number of elements of the data structure! E.g. for the 10 and 1000 element cases it should be much larger; one option is to implement a fixed time frame for each benchmark and measure the number of operations completed during that time
+ * For linked lists, to simulate a more realistic use case, allocate and free a new elment each time insertion/deletion happens (you can also, optionally and additionally, benchmark using a single re-used element)
 
 
 B) Array-like vs. Linked Lists
 ------------------------------
 
-Apply your benchmark over the cross product of the following settings. Exclude combinations which would run out of memory.
+Apply your benchmark over the cross product of the following settings. Exclude combinations which would run out of memory.  
+Run these benchmarks **on LCC2**, and also on some local hardware available to you.
 
 **Data Structures**: Array, linked list
 
