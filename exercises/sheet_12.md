@@ -30,7 +30,7 @@ Report and discuss your results.
 C) Code Understanding
 ---------------------
 
- * Describe the overall process of Lua execution in the interpreter.
+ * Describe the overall process of Lua execution in the interpreter. What are the major phases, and how much time do they take for the benchmark?
  * What does the option `LUA_USE_JUMPTABLE` do? Measure its performance impact on the benchmark.
 
 
