@@ -33,6 +33,7 @@ C) Code Understanding
  * Describe the overall process of Lua execution in the interpreter.
  * What does the option `LUA_USE_JUMPTABLE` do? Measure its performance impact on the benchmark.
 
+
 D) Optimization
 ---------------
 
