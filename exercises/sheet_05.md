@@ -1,7 +1,7 @@
 Exercise Sheet 5
 ================
 
-Use the spack GCC 12 installation on LCC2 for this exercise (`gcc version 12.2.0 (Spack GCC)` / module `gcc/12.2.0-gcc-4.8.5-ykbdn5t`).
+Use the GCC 12 installation available in a module on LCC3 for this exercise (`gcc version 12.2.0 (Spack GCC)` / module `gcc/12.2.0-gcc-8.5.0-p4pe45v`).
 
 For benchmarking, use both of our `larger_samples` testing programs, as well as `mmul`, `nbody`, `qap` and `delannoy`.
 Use the following configurations:
@@ -57,5 +57,5 @@ Can you find a configuration for any of the programs which is better than any de
 
 Submission
 ----------
-Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2023-sheet5]" in the subject line, before the start of the next VU at the latest.  
+Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2024-sheet5]" in the subject line, before the start of the next VU at the latest.  
 Try not to include attachments with a total size larger than 2 MiB.

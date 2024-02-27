@@ -48,7 +48,7 @@ B) Array-like vs. Linked Lists
 ------------------------------
 
 Apply your benchmark over the cross product of the following settings. Exclude combinations which would run out of memory.  
-Run these benchmarks **on LCC2**, and also on some local hardware available to you.
+Run these benchmarks **on LCC3**, and also on some local hardware available to you.
 
 **Data Structures**: Array, linked list
 
@@ -68,5 +68,5 @@ Plot and discuss your results.
 
 Submission
 ----------
-Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2023-sheet9]" in the subject line, before the start of the next VU at the latest.  
+Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2024-sheet9]" in the subject line, before the start of the next VU at the latest.  
 Try not to include attachments with a total size larger than 2 MiB.

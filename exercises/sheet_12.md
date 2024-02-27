@@ -2,7 +2,7 @@ Exercise Sheet 12 (final)
 =========================
 
 This exercise sheet about the Lua interpreter should be worked on **in groups**.  
-Perform all benchmarks on LCC2.
+Perform all benchmarks on LCC3.
 
 
 A) Setup and Basic Execution
@@ -54,6 +54,6 @@ Your tuned interpreters' best times for all 3 benchmarks will be compared agains
 
 Submission
 ----------
-Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2023-sheet12]" in the subject line, before the start of the next VU at the latest.
+Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2024-sheet12]" in the subject line, before the start of the next VU at the latest.
 Include your group composition in the email.  
 Try not to include attachments with a total size larger than 2 MiB.

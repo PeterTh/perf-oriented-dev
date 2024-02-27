@@ -17,9 +17,9 @@ B) Experiments
 
 Create a simple automated experiment setup, e.g. using your favourite scripting language. All program should be executed, each with a specified number of repetitions, and the output should include the mean of the requested performance metrics, as well as the variance. All raw data should also be stored in a structured fashion for later use.
 
-Provide the results for each benchmark, both on one of your personal compute platforms (describe it!) as well as on the LCC2 cluster.
+Provide the results for each benchmark, both on one of your personal compute platforms (describe it!) as well as on the LCC3 cluster.
 
 Submission
 ----------
-Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2023-sheet1]" in the subject line, before the start of the next VU at the latest.  
+Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2024-sheet1]" in the subject line, before the start of the next VU at the latest.  
 Try not to include attachments with a total size larger than 2 MiB.

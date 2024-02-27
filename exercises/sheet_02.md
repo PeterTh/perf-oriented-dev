@@ -1,7 +1,7 @@
 Exercise Sheet 2
 ================
 
-**Don't run either of these two exercises on the LCC2 headnode!**
+**Don't run either of these two exercises on the LCC3 headnode!**
 
 A) External CPU load
 --------------------
@@ -23,5 +23,5 @@ Do **not** use `/home` or `/scratch`.
 
 Submission
 ----------
-Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2023-sheet2]" in the subject line, before the start of the next VU at the latest.  
+Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2024-sheet2]" in the subject line, before the start of the next VU at the latest.  
 Try not to include attachments with a total size larger than 2 MiB.

@@ -1,7 +1,7 @@
 Exercise Sheet 7
 ================
 
-All measurements and compilation for this sheet should be performed on LCC2 (as always, benchmarks should be scheduled using Slurm, with exclusive node assignment).
+All measurements and compilation for this sheet should be performed on LCC3 (as always, benchmarks should be scheduled using Slurm, with exclusive node assignment).
 
 
 A) Preloading General Allocators
@@ -12,7 +12,7 @@ Fetch and build RPMalloc and MiMalloc from github:
 - https://github.com/mjansson/rpmalloc
 - https://github.com/microsoft/mimalloc
 
-We will use preloading (`LD_PRELOAD`) to replace the memory allocator in a large application with lots of small allocations, namely the Clang/LLVM compiler (`module load llvm/15.0.4-python-3.10.8-gcc-12.2.0-fmrxlel`).
+We will use preloading (`LD_PRELOAD`) to replace the memory allocator in a large application with lots of small allocations, namely the Clang/LLVM compiler (`module load llvm/15.0.4-python-3.10.8-gcc-8.5.0-bq44zh7`).
 
 As our benchmark, we'll compile the allscale_api project. To prepare, run this (I suggest doing so in `scratch`).
 
@@ -49,5 +49,5 @@ Report the benchmark time for the default allocator, and your bump allocator, fo
 
 Submission
 ----------
-Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2023-sheet7]" in the subject line, before the start of the next VU at the latest.  
+Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2024-sheet7]" in the subject line, before the start of the next VU at the latest.  
 Try not to include attachments with a total size larger than 2 MiB.

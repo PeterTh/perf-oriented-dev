@@ -2,7 +2,7 @@ Exercise Sheet 10
 =================
 
 This exercise sheet should be worked on in groups.  
-Perform all benchmarks on LCC2, using the benchmark structure defined in sheet 9.
+Perform all benchmarks on LCC3, using the benchmark structure defined in sheet 9.
 
 
 A) Unrolled Linked Lists
@@ -30,6 +30,6 @@ Evaluate how this change affects the performance of the two baselines (arrays an
 
 Submission
 ----------
-Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2023-sheet10]" in the subject line, before the start of the next VU at the latest.
+Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2024-sheet10]" in the subject line, before the start of the next VU at the latest.
 Include your group composition in the email.  
 Try not to include attachments with a total size larger than 2 MiB.
