@@ -1,8 +1,12 @@
 small_samples/build
 small_samples/build_debug
+small_samples/build_release
 larger_samples/npb_bt/build
 larger_samples/npb_bt/build_debug
+larger_samples/npb_bt/build_release
 larger_samples/ssca2/build
 larger_samples/ssca2/build_debug
+larger_samples/ssca2/build_release
 tools/build
 tools/build_debug
+tools/build_release

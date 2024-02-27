@@ -16,9 +16,9 @@ else()
   add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 endif()
 
-add_executable(loadcapture load_generator/loadcapture.c)
-add_executable(loadgen load_generator/loadgen.c)
-add_executable(loadprofile load_generator/loadprofile.c)
-add_executable(loadtest load_generator/loadtest.c)
+add_executable(loadcapture load_generator/loadcapture.c load_generator/loadutils.c)
+add_executable(loadgen load_generator/loadgen.c load_generator/loadutils.c)
+add_executable(loadprofile load_generator/loadprofile.c load_generator/loadutils.c)
+add_executable(loadtest load_generator/loadtest.c load_generator/loadutils.c)
 
 add_executable(malloctest malloctest/malloctest.c)
