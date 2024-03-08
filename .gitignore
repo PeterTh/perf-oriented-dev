@@ -1,5 +1,6 @@
-small_samples/build
 small_samples/build_debug
+small_samples/build/generated
+small_samples/build/CMakeFiles
 small_samples/build_release
 larger_samples/npb_bt/build
 larger_samples/npb_bt/build_debug
