@@ -22,7 +22,9 @@ mkdir build
 cmake -DCMAKE_BUILD_TYPE=Release -G Ninja ../code
 ```
 
-For each benchmark run, first perform a `ninja clean`, and then measure the time and peak memory consumption of `ninja`.
+For each benchmark run, first perform a `ninja clean`, and then measure the time and peak memory consumption of `ninja`.  
+**Note**: As always, you should benchmark by submitting a job to a node. To eliminate overhead to shared network file infrastructure,
+copy the input source code to the local file system (i.e. `/tmp`) and run the compilation with that as the source.
 
 Perform 3 sets of benchmarks:
 
