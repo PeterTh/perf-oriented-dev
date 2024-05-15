@@ -48,4 +48,6 @@ int main(int argc, char** argv) {
 	for(int64_t i = 0; i < num_threads; ++i) {
 		pthread_join(threads[i], NULL);
 	}
+
+	free(threads);
 }
