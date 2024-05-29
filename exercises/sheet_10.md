@@ -20,12 +20,9 @@ Implement a "tiered array" data structure (i.e. a fixed set of indirection layer
 C) Extended Benchmarking
 ------------------------
 
-Extend the list benchmark setup with
+Extend the list benchmark setup with an option to use a random access pattern (make sure to minimize the overhead of selecting the random locations, e.g. by precomputing them!).
 
-1) an option to allocate linked list elements in a random order
-2) a random access pattern (make sure to minimize the overhead of selecting the random locations!).
-
-Evaluate how this change affects the performance of the two baselines (arrays and linked lists) as well as your new, more complex data structures.
+Evaluate and plot how this change affects the performance of the two baselines (arrays and linked lists) as well as your new, more complex data structures.
 
 
 Submission
