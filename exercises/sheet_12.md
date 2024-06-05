@@ -48,6 +48,7 @@ Valid strategies include:
 
  * Anything which checks the source code (or its hash etc) against a table of pre-built or pre-optimized solutions
  * Anything which touches the input program
+ * Obviously, anything which breaks the interpreter for any other valid Lua program
 
 Your tuned interpreters' best times for all 3 benchmarks will be compared against all other groups' times.
 
