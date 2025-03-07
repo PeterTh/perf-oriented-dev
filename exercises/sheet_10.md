@@ -27,6 +27,6 @@ Evaluate and plot how this change affects the performance of the two baselines (
 
 Submission
 ----------
-Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2024-sheet10]" in the subject line, before the start of the next VU at the latest.
+Please submit your solutions by email to peter.thoman at UIBK, using the string "[Perf2025-sheet10]" in the subject line, before the start of the next VU at the latest.
 Include your group composition in the email.  
 Try not to include attachments with a total size larger than 2 MiB.
