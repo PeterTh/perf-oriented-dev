@@ -36,6 +36,17 @@ Verification: OK
 - The workload scales with the <num_directories> * <num_files_per_directory> * a random file size between the <min_file_size> and <max_file_size>
 - For this reason it makes sense to make <min_file_size> = <max_file_size>
 
+#### Measurement
+
+We selected 100 100 100 1000 as input. With a single directory the execution was too fast to be captured by `bin/time`
+
+```sh
+/bin/time filegen 100 100 100 10000
+        Wall clock time: 0:01.48
+        CPU time: 0.72
+        System time: 0.72
+        Max memory usage: 1660 Kb
+```
 
 ### filesearch
 #### Input
@@ -48,14 +59,15 @@ Verification: OK
 
 #### Measurement
 
-We selected 100 100 100 100 as input. With a single directory the execution was too fast to be captured by `bin/time`
+We executed it in the `build` folder right after _filegen_ (there should be enough files to check)
 
 ```sh
-/bin/time filegen 100 100 100 100
-        Wall clock time: 0:00.59
-        CPU time: 0.01
-        System time: 0.55
-        Max memory usage: 1724 Kb
+/bin/time filesearch
+The largest file is ./CMakeFiles/CMakeConfigureLog.yaml with size 52500 bytes
+        Wall clock time: 0:00.18
+        CPU time: 0.03
+        System time: 0.15
+        Max memory usage: 1628 Kb
 ```
 
 ### mmul

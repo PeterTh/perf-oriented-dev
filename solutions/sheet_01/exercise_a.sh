@@ -14,7 +14,7 @@ echo -e "\nDelannoy"
 /bin/time -f "$format" ./delannoy 12
 
 echo -e "\nFilegen"
-/bin/time -p -f "$format" ./filegen 100 100 100 100
+/bin/time -p -f "$format" ./filegen 100 100 100 10000
 
 # too fast to measure --> added -p flag
 echo -e "\nFilesearch"
