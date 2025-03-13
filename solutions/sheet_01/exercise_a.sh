@@ -8,19 +8,19 @@ cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
 
 echo -e "\nDelannoy"
-/bin/time ./delannoy 12
+/bin/time -v ./delannoy 12
 
 echo -e "\nFilegen"
-/bin/time ./filegen 10 100 100 100
+/bin/time -v ./filegen 1 100 100 100
 
 echo -e "\nFilesearch"
-/bin/time ./filesearch
+/bin/time -v ./filesearch
 
 echo -e "\nMmul"
-/bin/time ./mmul
+/bin/time -v ./mmul
 
 echo -e "\nNbody"
-/bin/time ./nbody
+/bin/time -v ./nbody
 
 echo -e "\nQap"
-/bin/time ./qap ../qap/problems/chr15a.dat
+/bin/time -v ./qap ../qap/problems/chr15a.dat
