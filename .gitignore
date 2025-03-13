@@ -10,3 +10,4 @@ larger_samples/ssca2/build_release
 tools/build
 tools/build_debug
 tools/build_release
+.vscode
