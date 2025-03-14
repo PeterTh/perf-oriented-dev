@@ -16,20 +16,17 @@ format="%E,%U,%S,%M"
 
 echo $header > $output_file
 
-# dirs=( 1 5 10 )
-# files=( 10 100 1000 )
-# min_size=1024
-# max_size=100000
-# for i in $(seq 1 $iterations)
-# do
-#     for dir in "${dirs[@]}"
-#     do
-#         for file in "${files[@]}"
-#         do
-#             values=$( /bin/time -f "$format" ./filegen $dir $file $min_size $max_size 2>&1 | tr '\n' ',' )
-#             echo "$dir - $file - $min_size - $max_size,$values" >> $output_file
-#         done
-#         # remove generated folder and its content
-#     done
-# done
-# rm -rf generated
+dir=10
+files=( 1 10 100 )
+min_size=512
+max_size=2048
+for i in $(seq 1 $iterations)
+do
+    for file in "${files[@]}"
+    do
+        values=$( /bin/time -f "$format" ./filegen $dir $file $min_size $max_size 2>&1 | tr '\n' ' ')
+        echo "$dir - $file - $min_size - $max_size,$values" >> $output_file
+    done
+        # remove generated folder and its content
+done
+rm -rf generated
