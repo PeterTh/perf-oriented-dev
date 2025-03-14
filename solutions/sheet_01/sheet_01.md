@@ -38,7 +38,7 @@ Verification: OK
 
 #### Measurement
 
-We selected 100 100 100 1000 as input. With a single directory the execution was too fast to be captured by `bin/time`
+We selected 100 100 100 10000 as input. With a single directory the execution was too fast to be captured by `bin/time`
 
 ```sh
 /bin/time filegen 100 100 100 10000
@@ -102,6 +102,8 @@ Verification: OK
 - M - number of iterations
 - L - number of movable particles
 
+The workload scales with M * N * min(N, L)
+
 #### Measurement
 
 We kept the default (1000 particles, 100 iterations) since it seems relevant enough.
@@ -114,7 +116,6 @@ Verification: OK
         System time: 0.00
         Max memory usage: 2052 Kb
 ```
-The workload scales with M * N * min(N, L)
 
 ### qap
 #### Input
