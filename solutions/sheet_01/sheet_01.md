@@ -146,5 +146,59 @@ Verification: OK
         Max memory usage: 1704 Kb
 ```
 
-## Experiment
+## Experiment \[INCOMPLETE\]
 
+Executed 10 times with a given parameter set.
+
+### Delannoy
+
+- Time (s):
+  - Mean: 0.6309
+  - Variance: 8.26e-06
+- User Time:
+  - Mean: 0.6218
+  - Variance: 1.49e-05
+- System Time:
+  - Mean: 0.00
+  - Variance: 0.00
+- Max Resident Set Size (KB):
+  - Mean: 1391.64
+  - Variance: 4367.87
+
+### Filegen
+
+10 dirs, 100 files , 1024-4096 sizes
+
+- Time (s):
+
+  - Mean: 2.1136
+  - Variance: 0.1666
+- User Time:
+
+  - Mean: 0.0664
+  - Variance: 7.77e-05
+- System Time:
+
+  - Mean: 0.1309
+  - Variance: 0.00021
+- Max Resident Set Size (KB):
+
+  - Mean: 1520.00
+  - Variance: 2507.64
+
+### Filesearch
+
+executed right after filegen
+
+
+
+### Mmul
+
+
+### Nbody
+
+default values (N = 1000, L = 1000, M = 100)
+
+### Qap
+
+used problem 15a
