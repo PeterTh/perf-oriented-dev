@@ -15,10 +15,11 @@ fi
 header="Args,Wall clock time (m:s),CPU time (s),System time (s),Max memory usage (Kb)"
 format="%E,%U,%S,%M"
 
-echo $header > $output_file
+echo $header > $output_file_1
+echo $header > $output_file_2
 
-input_sizes=("chr12a.dat" "chr15a.dat" "chr18a.dat" "chr20a.dat")
-input_structures=("chr15a.sln" "chr15b.sln" "chr15c.sln")
+input_sizes=("../qap/problems/chr10a.dat" "../qap/problems/chr12a.dat" "../qap/problems/chr15a.dat")
+input_structures=("../qap/problems/chr15a.dat" "../qap/problems/chr15b.dat" "../qap/problems/chr15c.dat")
 
 # qap sizes
 for i in $(seq 1 $iterations); do
