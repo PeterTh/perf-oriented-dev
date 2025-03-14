@@ -1,0 +1,11 @@
+Wall clock time (m:s),CPU time (s),System time (s),Max memory usage (Kb)
+Verification: OK,0:00.37,0.32,0.00,1680,
+Verification: OK,0:00.35,0.32,0.00,1632,
+Verification: OK,0:00.38,0.33,0.00,1664,
+Verification: OK,0:00.37,0.34,0.00,1756,
+Verification: OK,0:00.34,0.31,0.00,1744,
+Verification: OK,0:00.37,0.32,0.00,1688,
+Verification: OK,0:00.33,0.30,0.00,1688,
+Verification: OK,0:00.34,0.31,0.00,1696,
+Verification: OK,0:00.37,0.32,0.00,1612,
+Verification: OK,0:00.38,0.33,0.00,1672,

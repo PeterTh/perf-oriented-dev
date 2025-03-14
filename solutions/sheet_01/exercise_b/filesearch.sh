@@ -16,19 +16,17 @@ format="%E,%U,%S,%M"
 
 echo $header > $output_file
 
-dirs=( 1 5 10 )
-files=( 10 100 1000 )
-file_size=1024
+dir=10
+files=( 1 10 100 )
+min_size=512
+max_size=2048
 for i in $(seq 1 $iterations)
 do
-    for dir in "${dirs[@]}"
+    for file in "${files[@]}"
     do
-        for file in "${files[@]}"
-        do
-            ./filegen $dir $files $file_size $file_size
-            values=$( /bin/time -f "$format" ./filesearch $dir $files $file_size $file_size 2>&1 | tr '\n' ',' )
-            echo "$dir - $file - $file_size,$values" >> $output_file
-        done
+        ./filegen $dir $files $min_size $max_size
+        values=$( /bin/time -f "$format" ./filesearch 2>&1 | tr '\n' ',' )
+        echo "$dir - $file - $min_size - $max_size,$values" >> $output_file
     done
 done
 rm -rf generated
