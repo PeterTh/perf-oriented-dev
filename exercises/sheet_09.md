@@ -51,7 +51,9 @@ B) Array-like vs. Linked Lists
 Apply your benchmark over the cross product of the following settings. Exclude combinations which would run out of memory.  
 Run these benchmarks **on LCC3**, and also on some local hardware available to you.
 
-**Data Structures**: Array, linked list
+**Data Structures**: Array, linked list  
+ * linked list in 2 variants: (i) with sequentially allocated elements and (ii) with randomly allocated elements
+ * as we only perform linear traversal, use a singly-linked list
 
 **Instruction Mix**:
 | ins/del | read/write |
